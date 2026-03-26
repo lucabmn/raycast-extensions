@@ -40,7 +40,7 @@ export default function Command() {
   }, []);
 
   return (
-    <List isLoading={isLoading} searchBarPlaceholder="Search clipboard history">
+    <List isShowingDetail isLoading={isLoading} searchBarPlaceholder="Search clipboard history">
       {!isLoading && items.length === 0 ? (
         <List.EmptyView
           title="No text items found"
